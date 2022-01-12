@@ -7,7 +7,7 @@ from sqlalchemy import desc
 
 # basic layout
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:sparven23@localhost/firman'
+app.config['SQLALCHEMY_DATABASE_URI'] = "" #Your DB Settings
 db = SQLAlchemy(app)
 migrate = Migrate(app,db)
 
